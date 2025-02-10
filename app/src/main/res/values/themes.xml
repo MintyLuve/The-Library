@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.TheLibrary" parent="Base.Theme.TheLibrary" />
+
+    <style name="text" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">center</item>
+        <item name="autoSizeTextType">uniform</item>
+
+    </style>
 </resources>
