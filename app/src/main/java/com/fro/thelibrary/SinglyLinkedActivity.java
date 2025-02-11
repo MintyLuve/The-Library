@@ -134,12 +134,16 @@ public class SinglyLinkedActivity extends AppCompatActivity {
         switch (key){
             case 1:
                 Values.question1 = true;
+                break;
             case 2:
                 Values.question2 = true;
+                break;
             case 3:
                 Values.question3 = true;
+                break;
             case 4:
                 Values.question4 = true;
+                break;
         }
     }
 }
