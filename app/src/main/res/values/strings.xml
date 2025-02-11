@@ -1,35 +1,27 @@
 <resources>
     <string name="app_name">The Library</string>
 
-    <string name="long_text_1">
-        Volo rea quin pro apta. Tes sub advertisse duo dissimilem integritas inusitatis pro objectivus assignetur. Examinare antiquius conflatum credendam mo is at. Vestra dormio tur tribuo iterum odoris quibus usu.
-An de timeo ob solum oculi fecto. Exhibet quidnam rom ideoque sapores qui insanis sic. Demens tam ea ob eamque ac.
-    </string>
-    <string name="question_1">
-        Question - Alteram tanquam creatis viribus at si. Maximam vos hoc antehac imo ignotas eae aliarum fictile.
-    </string>
-    <string name="question_1_A">
-        A - Imaginarer re at
-    </string>
-    <string name="question_1_B">
-        B - Maximam vos hoc
-    </string>
-    <string name="question_1_C">
-        C - Magnitudo cap nul res
-    </string>
-    <string name="question_1_D">
-        D - Fas iii aliquam affirmo
-    </string>
-    <string name="long_text_2">
-        Imponere tractatu advenire ad superest occurret se quicquam si ha. Nihil solus pappo mo ei. Tum iis rom innata gloria hos quales. Ac sequentium im sufficeret institutum ad permittere at. Aliquis aliarum quaenam at de totaque notitia ob exhibet. Simus tes sae sacra error. Neque nomen ac ad opera is reges gi nobis. Se in objectivae ab is offerendum videbuntur satyriscos. Uno sequor tritam mediam essent eae usu rea.
-Hominem eos hac religio tentabo ginabor. Laxissimas objectivam eo percipitur distinctum ii industriam. Mei scopo ideis horum vel factu rei. Initio ad vereor posita possum si possim eo bitaviCallidus id dubitare posuisse ei de imperiti.Ne vi humanum to ea manibus quandiu fallant revolvo.
-    Volo rea quin pro apta. Tes sub advertisse duo dissimilem integritas inusitatis pro objectivus assignetur. Examinare antiquius conflatum credendam mo is at. Vestra dormio tur tribuo iterum odoris quibus usu.
-An de timeo ob solum oculi fecto. Exhibet quidnam rom ideoque sapores qui insanis sic. Demens tam ea ob eamque ac.
-    </string>
-    <string name="long_text_3">
-        Tria suae dei regi uno non illi vel male. Scilicet existant pla ubi delapsus vis fingerem incedere. Usitate ita petebat quidnam mea fas usitata. Est ibi dei nam ferant multis captum. Notaverim judicandi vox pla suffossis deo desuescam potestque.
-    </string>
-    <string name="long_text_4">
-        Corporis ita confidam uti age habuerim assignem sequatur. Sequeretur caligantis ita perfectius praecipuis permiscent ego mei. Perire qui manebo istius habens uti. Id inde post alio huic sive si du. Lumini videor hac corpus aut nemine cui cur. Ne vi humanum to ea manibus quandiu fallant revolvo. Callidus id dubitare posuisse ei de imperiti.
-    </string>
+    <string name="long_text_1">Imagine you have to go grocery shopping. You have to buy apples, bananas, milk, maybe some eggs.. but how would you organize this information? You wouldn’t just have a bunch of sticky notes, you would write it all down in a list. An array is like a shopping list. Each item on the list would be an element in the array, and you can easily manage and change all of the items while still keeping it in a structured order. Each item occupies a specific position in the list, called an index. So if your array was apples, bananas, milk, eggs, then milk would be at index 3.</string>
+    <string name="long_text_2">An array is used to store lists of related information. All elements of an array must be of the same data type. So you can’t put the number 1 and the letter C in the same array. But, it is very easy to alter and go through an array using the index. If you decided that you didn’t want apples and instead wanted oranges, you would just change index 1 from ‘apples’ to ‘oranges’. The rest of the list remains unchanged, but now you know that you are buying apples.</string>
+    <string name="long_text_3">The issue comes in when you need to add elements to an array. Arrays only have a set amount of elements, and once they are created that can’t be changed. So your shopping list can only have four items. How do you add more items to your list after you created it initially?</string>
+    <string name="long_text_4">A linked list is a different way of storing a list of related information. Instead of knowing where each element of a list is with indexes, each element of a list (called a node) knows what the next node is. A linked list only knows what its head (the first node of the list) is. Each node can point to the node that comes after it. For example, you want your list to be oranges, bananas, milk, then yogurt. If you wanted to know how far in the list milk is, you would start with the head, oranges, and work your way through the list until you get to yogurt. To traverse a list, you begin at the head (oranges), then go to the next node (bananas), then the next node (milk), and finally it would reach the desired node (yogurt).</string>
+    <string name="long_text_5">Now, how do you add elements into a linked list? Since all nodes are ‘linked’ together by knowing what the next node is, to add a node at the end of the list all you need to do is change what the last node’s next node is. Let’s say you want to add cheese to the end of the list. So you need to traverse the list (head (oranges) → next (bananas) → next (milk) → next (yogurt)), and then change the next node to be cheese.</string>
+    <string name="long_text_6">Now let\'s say you need to get strawberries. They’re located near the bananas, so you would want to get them after bananas. To insert an element in the middle of the list, you have to change the previous node’s next to be your new node, and change the new node’s next node to be the previous node’s next node. This is a little confusing, so think of it this way. The list is oranges → bananas → milk → yogurt → cheese. You want to add strawberries after bananas. So bananas’ next node would become strawberries, and strawberries’ next node would be milk. See the image for more clarification.</string>
+    <string name="long_text_7">Deleting a node is very similar to adding a node. To delete a node, you remove all references to it. So you would set the previous node’s next node to be the current node’s next node, and change the current node’s next node to be nothing. Let’s say that you don’t need to get milk anymore. Your current list is oranges → bananas → strawberries → milk → yogurt → cheese. To remove milk, we would set strawberries’ next node to be yogurt, and set milk’s next node to be nothing. This would make milk inaccessible from the list, therefore remove it.</string>
+    <string name="long_text_8">A linked list is a modular way to hold lots of data of the same type. A linked list works by having a bunch of individual nodes which hold data, and each node knows what the next node is. To traverse a list, you start at the head, and keep going to the next node until you reach your desired node. To add or delete a node, you change the surrounding node’s next nodes until the list is in place. You’ll learn more about how to use a linked list in the next lesson.</string>
+    <string name="long_text_9"></string>
+    <string name="long_text_10"></string>
+    <string name="long_text_11"></string>
+    <string name="long_text_12"></string>
+    <string name="long_text_13"></string>
+    <string name="long_text_14"></string>
+
+    <string name="question_1">If you didn’t want eggs and instead wanted yogurt, what index would you change to yogurt?</string>
+    <string name="question_2">What index is bananas?</string>
+    <string name="question_3">What would strawberries’ next node be?</string>
+    <string name="question_4">What would strawberries’ next node be?</string>
+    <string name="question_5"></string>
+    <string name="question_6"></string>
+    <string name="question_7"></string>
+    <string name="question_8"></string>
 </resources>
