@@ -15,11 +15,11 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     // Declare variables
     static TextView button1;
-    TextView button3;
+    static TextView button3;
     static ImageView pie1;
-    ImageView pie3;
+    static ImageView pie3;
     static TextView percent1;
-    TextView percent3;
+    static TextView percent3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), DoublyLinkedActivity.class)));
 
         check1(Values.totalPercent1);
+        check3(Values.totalPercent3);
     }
 
     // checks to see if it needs to change the pie chart
@@ -72,6 +73,39 @@ public class MainActivity extends AppCompatActivity {
             pie1.setBackgroundResource(R.drawable.pie_100);
             button1.setText("Go -->");
             Values.totalPercent1 = 100;
+        }
+    }
+
+    public static void check3(int num){
+        if (num == 0 && Values.totalPercent3 <= 0){
+            percent3.setText("0% Completed");
+            pie3.setBackgroundResource(R.drawable.pie_0);
+            button3.setText("Begin -->");
+            Values.totalPercent3 = 0;
+        }
+        else if (num == 25 && Values.totalPercent3 <= 25){
+            percent3.setText("25% Completed");
+            pie3.setBackgroundResource(R.drawable.pie_25);
+            button3.setText("Continue -->");
+            Values.totalPercent3 = 25;
+        }
+        else if (num == 50 && Values.totalPercent3 <= 50){
+            percent3.setText("50% Completed");
+            pie3.setBackgroundResource(R.drawable.pie_50);
+            button3.setText("Continue -->");
+            Values.totalPercent3 = 50;
+        }
+        else if (num == 75 && Values.totalPercent3 <= 75){
+            percent3.setText("75% Completed");
+            pie3.setBackgroundResource(R.drawable.pie_75);
+            button3.setText("Continue -->");
+            Values.totalPercent3 = 75;
+        }
+        else if (num == 100 && Values.totalPercent3 <= 100){
+            percent3.setText("100% Completed");
+            pie3.setBackgroundResource(R.drawable.pie_100);
+            button3.setText("Go -->");
+            Values.totalPercent3 = 100;
         }
     }
 }

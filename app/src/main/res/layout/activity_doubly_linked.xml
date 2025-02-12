@@ -54,116 +54,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/long_text_3"
+            android:text="@string/long_text_9"
             android:fontFamily="@font/lexend_deca"
             android:textColor="@color/grey"
             android:autoSizeTextType="uniform"
             android:layout_marginBottom="10dp"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@drawable/singly_linked_lists_temp"
+            android:layout_height="80dp"
+            android:background="@drawable/lesson_doubly_1"
+            android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:padding="5dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Figure 3.1"
-            android:fontFamily="@font/lexend_deca"
-            android:textColor="@color/grey"
-            android:autoSizeTextType="uniform"
-            android:layout_marginBottom="10dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@drawable/large_background"
-            android:orientation="vertical"
-            android:layout_marginBottom="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:padding="5dp"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                style="@style/text"
-                android:text="@string/question_1"
-                android:fontFamily="@font/lexend_exa"
-                android:textStyle="bold"
-                android:textColor="@color/dark_grey"
-                android:layout_weight="1"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:weightSum="4">
-                <TextView
-                    android:id="@+id/question1_A"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="A"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textAlignment="center"
-                    android:textSize="11sp"
-                    android:fontFamily="@font/lexend_exa"
-                    android:padding="12dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/button_purple_background"
-                    android:clickable="true"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="1"/>
-                <TextView
-                    android:id="@+id/question1_B"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="B"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textAlignment="center"
-                    android:textSize="11sp"
-                    android:fontFamily="@font/lexend_exa"
-                    android:padding="12dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/button_red_background"
-                    android:clickable="true"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="1"/>
-                <TextView
-                    android:id="@+id/question1_C"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="C"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textAlignment="center"
-                    android:textSize="11sp"
-                    android:fontFamily="@font/lexend_exa"
-                    android:padding="12dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/button_purple_background"
-                    android:clickable="true"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="1"/>
-                <TextView
-                    android:id="@+id/question1_D"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="D"
-                    android:textSize="11sp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textAlignment="center"
-                    android:fontFamily="@font/lexend_exa"
-                    android:textColor="@color/white"
-                    android:background="@drawable/button_red_background"
-                    android:clickable="true"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
+            android:layout_marginEnd="10dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="25dp"
@@ -174,10 +76,318 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/long_text_2"
+            android:text="@string/long_text_10"
             android:fontFamily="@font/lexend_deca"
             android:textColor="@color/grey"
             android:autoSizeTextType="uniform"
             android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/large_background"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                style="@style/text"
+                android:text="@string/question_5"
+                android:fontFamily="@font/lexend_exa"
+                android:textStyle="bold"
+                android:textColor="@color/dark_grey"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"/>
+            <LinearLayout
+                style="@style/question_layout">
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question1_A"
+                    android:textSize="9sp"
+                    android:text="A - Traverse from head to end"
+                    android:background="@drawable/button_purple_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question1_B"
+                    android:text="B - It\'s given to you"
+                    android:background="@drawable/button_red_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question1_C"
+                    android:textSize="9sp"
+                    android:text="C - Singly Linked Lists don't have tail"
+                    android:background="@drawable/button_purple_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question1_D"
+                    android:text="D - The head is the tail"
+                    android:background="@drawable/button_red_background"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_text_11"
+            android:fontFamily="@font/lexend_deca"
+            android:textColor="@color/grey"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/lesson_doubly_2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/large_background"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                style="@style/text"
+                android:text="@string/question_6"
+                android:fontFamily="@font/lexend_exa"
+                android:textStyle="bold"
+                android:textColor="@color/dark_grey"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"/>
+            <LinearLayout
+                style="@style/question_layout">
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question2_A"
+                    android:text="A - Nothing"
+                    android:background="@drawable/button_purple_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question2_B"
+                    android:text="B - The head"
+                    android:background="@drawable/button_red_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question2_C"
+                    android:text="C - Google"
+                    android:background="@drawable/button_purple_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question2_D"
+                    android:text="D - &quot;Shoes&quot; Search"
+                    android:textSize="9sp"
+                    android:background="@drawable/button_red_background"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Adding Nodes into\nDoubly Linked Lists"
+            android:fontFamily="@font/lexend_zetta"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_text_12"
+            android:fontFamily="@font/lexend_deca"
+            android:textColor="@color/grey"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/lesson_doubly_3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_text_13"
+            android:fontFamily="@font/lexend_deca"
+            android:textColor="@color/grey"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/lesson_doubly_4"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/large_background"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                style="@style/text"
+                android:text="@string/question_7"
+                android:fontFamily="@font/lexend_exa"
+                android:textStyle="bold"
+                android:textColor="@color/dark_grey"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"/>
+            <LinearLayout
+                style="@style/question_layout">
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question3_A"
+                    android:text="A - 1"
+                    android:background="@drawable/button_purple_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question3_B"
+                    android:text="B - 3"
+                    android:background="@drawable/button_red_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question3_C"
+                    android:text="C - 4"
+                    android:background="@drawable/button_purple_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question3_D"
+                    android:text="D - 6"
+                    android:background="@drawable/button_red_background"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Deleting Nodes from\nDoubly Linked Lists"
+            android:fontFamily="@font/lexend_zetta"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_text_14"
+            android:fontFamily="@font/lexend_deca"
+            android:textColor="@color/grey"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/lesson_doubly_5"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/large_background"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                style="@style/text"
+                android:text="@string/question_8"
+                android:fontFamily="@font/lexend_exa"
+                android:textStyle="bold"
+                android:textColor="@color/dark_grey"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"/>
+            <LinearLayout
+                style="@style/question_layout">
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question4_A"
+                    android:text="A - Nothing"
+                    android:background="@drawable/button_purple_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question4_B"
+                    android:text="B - Shoe Store"
+                    android:background="@drawable/button_red_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question4_C"
+                    android:text="C - Tail"
+                    android:background="@drawable/button_purple_background"/>/>
+                <TextView
+                    style="@style/question_button"
+                    android:id="@+id/question4_D"
+                    android:textSize="9sp"
+                    android:text="D - Error, Nothing can't have next node"
+                    android:background="@drawable/button_red_background"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Summary"
+            android:fontFamily="@font/lexend_zetta"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_text_15"
+            android:fontFamily="@font/lexend_deca"
+            android:textColor="@color/grey"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/back2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="&lt;-- Back"
+                style="@style/text"
+                android:fontFamily="@font/lexend_exa"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_purple_background"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_weight="0.4"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Next --&gt;"
+                style="@style/text"
+                android:fontFamily="@font/lexend_exa"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_purple_background"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_weight="0.4"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

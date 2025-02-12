@@ -11,5 +11,5 @@ public class Values {
     static boolean question8 = false;
 
     static int totalPercent1 = -1;
-    static int totalPercent2 = -1;
+    static int totalPercent3 = -1;
 }
